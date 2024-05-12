@@ -1,0 +1,116 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "mumblers_demoregular";
+  color: #262626;
+  background-image: url(/pexels-mikkel-kvist-16039120.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+img{
+  position: absolute;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 1;
+}
+.container{
+  width: 95%;
+  margin: auto;
+  display: flex;
+}
+
+.notebook{
+  width: 600px;
+  min-height: 80vh;
+  padding-top: 20px;
+  margin:auto;
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: rgba(255, 255, 255, 0); */
+  /* box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.50);  */
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.281); 
+  border-radius: 15px;
+  z-index: 2;
+}
+
+.title{
+  font-size: 1.25rem;
+  text-align: center;
+  color: white;
+}
+
+.input-container{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.input-container i{
+  cursor: pointer;
+  font-size: 2.2rem;
+  color: rgb(240, 240, 240);
+}
+
+.input-container input{
+  font-family: inherit;
+  outline: 0;
+  border: 0;
+  width: 65%;
+  font-size: 1.5rem;
+  border-bottom: 3px solid lightgray;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.295);
+}
+
+#groceryItems{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 75%;
+  font-size: 1.5rem;
+}
+
+#groceryItems h2{
+  cursor: pointer;
+  color: white;
+}
+
+@media(max-width:768px) {
+  #groceryItems {
+    font-size: 1.2rem;
+  }
+}
+
+@media(max-width:480px){
+  .title{
+    font-size: 1rem;
+  }
+
+  .input-container i{
+    font-size: 2rem;
+  }
+
+  .input-container input{
+    font-size: 1rem;
+  }
+
+  #groceryItems{
+    font-size: 0.9rem;
+  }
+}
+#eraser{
+  /* background-color: rgb(220, 174, 226); */
+}
